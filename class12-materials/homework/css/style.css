@@ -1,0 +1,53 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+	padding: 70px 0;
+}
+.box {
+	border: 2px solid black;
+	width: 70px;
+	height: 70px;
+	margin-left: 10px;
+}
+.red {
+	color: white;
+	background-color: red;
+}
+.blue {
+	color: white;
+	background-color: blue;
+}
+.green {
+	color: white;
+	background-color: green;
+}
+.yellow {
+	color: white;
+	background-color: yellow;
+}
+
+.pink {
+	color: white;
+	background-color: pink;
+}
+li {
+	list-style: none;
+	text-align: center;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

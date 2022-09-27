@@ -1,0 +1,91 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav * {
+	float: left;
+	width: 10%;
+}
+
+header nav ul {
+	margin-left: 20%;
+	width: 60%;
+}
+header nav input {
+	background-color: rgba(0, 0, 0, 0.515);
+	color: white;
+	margin-top: 15px;
+}
+li {
+	list-style: none;
+}
+
+section section {
+	padding-top: 100px;
+	display: block;
+	float: left;
+	width: 45%;
+}
+section section form input + input {
+	background-color: rgba(0, 0, 0, 0.515);
+	color: white;
+}
+section section img {
+	width: 100%;
+}
+.sec2 li {
+	float: left;
+	width: 25%;
+}
+@media only screen and (max-width: 600px) {
+	header nav ul,
+	header nav input {
+		display: none;
+	}
+	body {
+		margin-left: 5%;
+	}
+	section section {
+		width: 90%;
+		padding-top: 10px;
+		clear: both;
+	}
+
+	section section form input {
+		width: 100%;
+	}
+	section section form input + input {
+		margin-top: 10px;
+		background-color: rgba(0, 0, 0, 0.515);
+		color: white;
+	}
+	.sec2 li {
+		clear: both;
+		width: 100%;
+	}
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

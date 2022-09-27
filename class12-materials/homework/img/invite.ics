@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20220830T183000Z
+DTEND:20220830T190000Z
+DTSTAMP:20220808T121215Z
+ORGANIZER;CN=nicolecombs@calcuttahoneycomb.com:mailto:nicolecombs@calcuttah
+ oneycomb.com
+UID:llbphg6582535slpaldt7ndtj4@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=nicolecombs@calcuttahoneycomb.com;X-NUM-GUESTS=0:mailto:nicolecombs@cal
+ cuttahoneycomb.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=naeemghadai007.com@gmail.com;X-NUM-GUESTS=0:mailto:naeemghadai007.com@g
+ mail.com
+X-MICROSOFT-CDO-OWNERAPPTID:-1637440127
+CREATED:20220808T121213Z
+DESCRIPTION:Event Name: 30 Minute Meeting\n\nPlease share anything that wil
+ l help prepare for our meeting.: I'm Naeem Ghadai and I'm originally from M
+ umbai\, India. I recently joined 100devs\, where I discovered the value of 
+ networking through the leon. As a future front-end developer\, I am now doi
+ ng some practice and building my network. This will be my second coffee cha
+ t\, and I'm looking forward to learning from you.\n\nNeed to make changes t
+ o this event?\nCancel: https://calendly.com/cancellations/e63506ed-b4cc-4d6
+ 3-9ca6-06a618064987\nReschedule: https://calendly.com/reschedulings/e63506e
+ d-b4cc-4d63-9ca6-06a618064987\n\nPowered by Calendly.com\n\n\n-::~:~::~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\
+ nDo not edit this section of the description.\n\nView your event at https:/
+ /calendar.google.com/calendar/event?action=VIEW&eid=bGxicGhnNjU4MjUzNXNscGF
+ sZHQ3bmR0ajQgbmFlZW1naGFkYWkwMDcuY29tQG0&tok=MzMjbmljb2xlY29tYnNAY2FsY3V0dG
+ Fob25leWNvbWIuY29tZDYwM2ZhY2IzYjhhNjZlMmEyOTZlYmEyM2NlMDU3NzE2NTMyYWNmZg&ct
+ z=UTC&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20220808T121213Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Ghadai Mohd Naeem and Nicole Combs
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

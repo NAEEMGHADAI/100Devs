@@ -1,0 +1,42 @@
+Css:
+what makes a site responsive:
+1) Fluid
+2) Elastic
+3) Content Decision
+
+1) Fluid:
+Fluidity is cheaper (easier) 
+if you are using percentage with your width or flex box
+Fluidity means as your screen size goes smaller or biggers it kind of responding (it looks ok) 
+Fluidity helps us in between our break points 
+
+2) Elastic
+it is related to text using rems and ems 
+em: what em is doing is looking for its closets parent's font size 
+
+hrml:
+<section>
+	<p> Spam</p>
+<section>
+
+css:
+html{
+	font-size: 62.5%;
+}
+section {
+	font-size: 20px;
+}
+p{
+	font-size: 1em;
+}
+
+here p will look for its closest parent which is section,
+here p will have font-size of 20px as 1 em in this instance is 20px as p got its base from its parent
+tag with em will look above the ansestor chain until it finds a parent with a font-size thats how it will have its base size
+
+There is problem with ems:
+if somebody goes ahead adds a diffrent parent, maybe they put this paragragh inside an article , if that article also have some font-size it will never go to section
+and grab its font-size from article.
+
+we have solution for this problem is : rems
+rems don't look at parent it looks at html parent (root element)

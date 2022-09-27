@@ -1,0 +1,36 @@
+body {
+	padding: 20px;
+	border: 3px solid lightgreen;
+	background-color: lightseagreen;
+	color: white;
+}
+
+section p img {
+	display: block;
+}
+
+section p img {
+	float: right;
+	margin: 20px 0 0 30px;
+	padding: 4px;
+	height: 100px;
+	width: 100px;
+}
+
+nav a + a {
+	color: lightgreen;
+}
+h1 {
+	font-style: italic;
+	text-align: center;
+}
+p {
+	font-family: Roboto;
+}
+nav {
+	font-weight: bold;
+	text-align: center;
+}
+footer nav a {
+	color: lightgreen;
+}
