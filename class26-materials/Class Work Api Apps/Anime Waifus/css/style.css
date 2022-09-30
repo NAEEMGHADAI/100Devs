@@ -1,0 +1,28 @@
+body {
+	background-color: black;
+	color: white;
+}
+main {
+	/* margin-top: 100px; */
+	text-align: center;
+}
+button {
+	height: 40px;
+	color: white;
+	background-color: rgba(10, 10, 84, 0.585);
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+p {
+	font-size: x-large;
+	font-size: larger;
+	padding: 20px;
+}
+
+.intro {
+	margin-top: 20px;
+}
+.source {
+	color: white;
+}
