@@ -8,28 +8,32 @@ let h3 = document.querySelector("h3");
 
 button.addEventListener("click", (e) => {
 	let val = input.value;
+	val = change(val);
 	let url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${val}`;
 
 	fetch(url)
 		.then((res) => res.json()) // parse response as JSON
 		.then((data) => {
-			console.log(data);
-			console.log(data.drinks[0]);
-			console.log(data.drinks[0].strDrink);
-			h2.innerText = data.drinks[0].strDrink;
-			h2.innerHTML += "</br>";
-			img.src = data.drinks[0].strDrinkThumb;
-			h3.innerHTML = data.drinks[0].strInstructions;
-			// for (let index = 0; index < data.drinks.length; index++) {
-			// 	console.log(data.drinks[index]);
-			// 	console.log(data.drinks[index].strDrink);
-			// 	h2.innerText = data.drinks[index].strDrink;
-			// 	h2.innerHTML += "</br>";
-			// 	img.src = data.drinks[index].strDrinkThumb;
-			// 	h3.innerHTML = data.drinks[index].strInstructions;
-			// }
+			addElement(data.drinks[0]);
 		})
 		.catch((err) => {
 			console.log(`error ${err}`);
 		});
 });
+
+function addElement(data) {
+	h2.innerText = data.strDrink;
+	h2.innerHTML += "</br>";
+	img.src = data.strDrinkThumb;
+	h3.innerHTML = data.strInstructions;
+}
+function change(val) {
+	let valArr = val.split(" ");
+	let ans = valArr[0];
+	valArr.forEach((element, i) => {
+		if (i !== 0) {
+			ans = ans + "_" + element;
+		}
+	});
+	return ans;
+}
