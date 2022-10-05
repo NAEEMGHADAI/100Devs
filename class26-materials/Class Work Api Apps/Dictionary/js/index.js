@@ -1,5 +1,6 @@
 document.querySelector("button").addEventListener("click", getFetch);
 
+const mainSec = document.querySelector(".mainSec");
 const header = document.querySelector(".header");
 const phonetics = document.querySelector(".phonetics");
 const Definitions = document.querySelector(".Definitions");
@@ -14,6 +15,7 @@ function getFetch() {
 		.then((data) => {
 			clear();
 			// console.log(data[0]);
+			mainSec.removeAttribute("hidden");
 			createHeader(data[0], header);
 			createPhonetics(data[0], phonetics);
 			createDef(data[0].meanings, Definitions);
@@ -28,6 +30,7 @@ function clear() {
 	header.innerHTML = "";
 	Definitions.innerHTML = "";
 	phonetics.innerHTML = "";
+	notfound.innerHTML = "";
 }
 
 function playAudio(url) {

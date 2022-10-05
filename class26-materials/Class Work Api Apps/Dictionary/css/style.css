@@ -1,6 +1,14 @@
-* {
-	background-color: cadetblue;
+body {
+	background-image: linear-gradient(
+		to right,
+		#050937,
+		#003e74,
+		#0076a5,
+		#00b1c1,
+		#12ebc9
+	);
 	color: white;
+	font-family: "Abyssinica SIL", serif;
 }
 main {
 	margin-top: 50px;
@@ -15,7 +23,14 @@ h2 {
 button {
 	padding: 12px;
 	color: white;
-	background-color: rgba(10, 10, 84, 0.585);
+	background-image: radial-gradient(
+		circle,
+		#55829c,
+		#5a84a6,
+		#6385b0,
+		#7085b8,
+		#8184bd
+	);
 	border: none;
 	border-radius: 6px;
 	cursor: pointer;
@@ -51,4 +66,11 @@ input[type="text"]:focus {
 	font-size: xx-large;
 	text-align: center;
 	padding: 50px;
+}
+
+.mainSec {
+	padding: 20px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+	outline: none;
+	margin: 30px 30px;
 }
