@@ -1,0 +1,7 @@
+function delay(ms) {
+	return new Promise((resolve, reject) => {
+		setTimeout(resolve, 3000);
+	});
+}
+
+delay(3000).then(() => console.log("runs after 3 seconds"));
