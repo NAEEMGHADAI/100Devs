@@ -101,44 +101,56 @@
 //     .catch(err => console.log(err))
 
 //Code 07
-// function houseOne(){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve('Paper delivered to house 1')
-//         }, 1000)
-//     })
+// function houseOne() {
+// 	return new Promise((resolve, reject) => {
+// 		setTimeout(() => {
+// 			resolve("Paper delivered to house 1");
+// 		}, 1000);
+// 	});
 // }
-// function houseTwo(){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve('Paper delivered to house 2')
-//         }, 5000)
-//     })
+// function houseTwo() {
+// 	return new Promise((resolve, reject) => {
+// 		setTimeout(() => {
+// 			reject("Paper delivered to house 2");
+// 		}, 5000);
+// 	});
 // }
-// function houseThree(){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve('Paper delivered to house 3')
-//         }, 2000)
-//     })
-// }
-
-// async function getPaid(){
-//     const houseOneWait = await houseOne()
-//     const houseTwoWait = await houseTwo()
-//     const houseThreeWait = await houseThree()
-//     console.log(houseOneWait)
-//     console.log(houseTwoWait)
-//     console.log(houseThreeWait)
+// function houseThree() {
+// 	return new Promise((resolve, reject) => {
+// 		setTimeout(() => {
+// 			resolve("Paper delivered to house 3");
+// 		}, 2000);
+// 	});
 // }
 
-// getPaid()
+// async function getPaid() {
+// 	try {
+// 		const houseOneWait = await houseOne();
+// 		const houseTwoWait = await houseTwo();
+// 		const houseThreeWait = await houseThree();
+// 		console.log(houseOneWait);
+// 		console.log(houseTwoWait);
+// 		console.log(houseThreeWait);
+// 	} catch (err) {
+// 		console.log(err);
+// 	}
+// }
+
+// getPaid();
 
 //Code 08
-// async function getACuteDogPhoto(){
-//     const res = await fetch('https://dog.ceo/api/breeds/image/random')
-//     const data = await res.json()
-//     console.log(data)
-// }
-// getACuteDogPhoto()
-
+async function getACuteDogPhoto() {
+	try {
+		const res = await fetch("https://dog.ceo/api/breeds/image/rand");
+		console.log(res);
+		if (!res.ok) {
+			throw Error(res.status);
+		} else {
+			const data = await res.json();
+			console.log(data);
+		}
+	} catch (error) {
+		console.log(error);
+	}
+}
+getACuteDogPhoto();
